@@ -1,0 +1,99 @@
+.get-started{
+  background-color: rgba(29, 204, 137, 0.973);
+  padding: 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  margin-bottom: 30px;
+}
+.intro1-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.intro1-text{
+  font-size: 40px;
+  font-weight: bold;
+  word-spacing: -5px;
+}
+.intro1-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.full-stack-course{
+  height: 140px;
+}
+.testing {
+  height: 200px;
+}
+
+.flex-1,
+.flex-2 {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  padding: 60px 15px;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out; /* Smooth transition effect */
+}
+
+.flex-1:hover,
+.flex-2:hover {
+  transform: translateY(-5px); /* Move the flexbox up 5px on hover */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow for subtle lift effect */
+}
+
+.flex-2{
+  padding-top: 0px;
+}
+
+.path {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center; /* This centers text horizontally within the element */
+}
+
+.path-discription {
+  color: rgb(49, 49, 49);
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.7;
+  /* Removed unnecessary align-items and justify-content;
+     already set on parent element */
+}
+.bag{
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+.explore-button{
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f8d302;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.explore-button:hover{
+  padding-left: 23px;
+  padding-right: 23px;
+  background-color: #f8d302;
+}

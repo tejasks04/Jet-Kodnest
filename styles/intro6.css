@@ -1,0 +1,109 @@
+/* Container for intro section */
+.intro6-section {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  align-items: center;
+  padding: 60px;
+  padding-top: 0px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+/* Flex container for playing elements */
+.play-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Styling for individual playing elements */
+/* Base styles for play buttons */
+.play-1, .play-2, .play-3, .play-4, .play-5, .play-6 {
+  cursor: pointer;
+  transition: transform 0.3s ease-out; /* Smooth zoom effect */
+}
+
+/* Specific styles for each play button */
+.play-1 {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  height: 110px;
+  width: 110px;
+  border-radius: 60px;
+  margin-right: 420px;
+}
+
+.play-2 {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.play-3 {
+  box-shadow: 0px 1px 5px rgba(199, 183, 183, 0.301);
+  height: 90px;
+  width: 90px;
+  border-radius: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.play-4 {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+  margin-right: 480px;
+}
+
+.play-5 {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  margin-left: 40px;
+}
+
+.play-6 {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  height: 90px;
+  width: 90px;
+  border-radius: 45px;
+  margin-top: 20px;
+}
+
+/* Hover effect for zooming */
+.play-1:hover, .play-2:hover, .play-3:hover, .play-4:hover, .play-5:hover, .play-6:hover {
+  transform: scale(1.20); /* Zoom in by 5% */
+}
+
+/* Styling for sub-section */
+.sub6-section {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  align-items: center;
+  padding: 60px 60px 40px 60px;
+  border-radius: 5px;
+  z-index: 100;
+}
+.sub6-section {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  align-items: center;
+  padding: 60px 60px 40px 60px;
+  border-radius: 5px;
+  z-index: 100;
+  transition: transform 0.5s ease; /* Smooth transition for transform property */
+}

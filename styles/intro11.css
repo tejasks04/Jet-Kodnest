@@ -1,0 +1,167 @@
+.intro11-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  background-color: whitesmoke;
+  align-items: stretch; /* Center items vertically */
+  justify-items: center; /* Center items horizontally */
+  padding: 50px;
+  padding-top: 50px;
+  padding-left: 80px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  z-index: 100;
+}
+
+.k-logo{
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+.p-head{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.p-lines,
+.p-line {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  position: relative;
+  color: black;
+}
+
+.p-line::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0; /* Start from the left side */
+  right: 0; /* Stretch to the right side */
+  margin: auto; /* Center align the pseudo-element */
+  width: 0;
+  height: 4px;
+  background-color: rgb(255, 230, 0);
+  transition: width 0.3s ease-out; /* Smooth transition for width */
+}
+
+.p-line:hover::after {
+  width: 100%; /* Expand the width to 100% of the text width on hover */
+}
+.p-line-1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  position: relative;
+  color: black;
+}
+
+.p-line-1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0; /* Start from the left side */
+  right: 0; /* Stretch to the right side */
+  margin: auto; /* Center align the pseudo-element */
+  width: 0;
+  height: 4px;
+  background-color: rgb(255, 230, 0);
+  transition: width 0.3s ease-out; /* Smooth transition for width */
+}
+
+.p-line-1:hover::after {
+  width: 80%; /* Expand the width to 100% of the text width on hover */
+}
+.p-line-2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  position: relative;
+  color: black;
+}
+
+.p-line-2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0; /* Start from the left side */
+  right: 0; /* Stretch to the right side */
+  margin: auto; /* Center align the pseudo-element */
+  width: 0;
+  height: 4px;
+  background-color: rgb(255, 230, 0);
+  transition: width 0.3s ease-out; /* Smooth transition for width */
+}
+
+.p-line-2:hover::after {
+  width: 60%; /* Expand the width to 100% of the text width on hover */
+}
+.p-line-3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  position: relative;
+  color: black;
+}
+
+.p-line-3::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0; /* Start from the left side */
+  right: 0; /* Stretch to the right side */
+  margin: auto; /* Center align the pseudo-element */
+  width: 0;
+  height: 4px;
+  background-color: rgb(255, 230, 0);
+  transition: width 0.3s ease-out; /* Smooth transition for width */
+}
+
+.p-line-3:hover::after {
+  width: 30%; /* Expand the width to 100% of the text width on hover */
+}
+
+.p-hire{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    position: relative;
+    color: rgb(51, 218, 162);
+    font-weight: bold;
+  }
+  
+  .p-hire::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0; /* Start from the left side */
+    right: 0; /* Stretch to the right side */
+    margin: auto; /* Center align the pseudo-element */
+    width: 0;
+    height: 4px;
+    background-color: rgb(51, 218, 162);;
+    transition: width 0.3s ease-out; /* Smooth transition for width */
+  }
+  
+  .p-hire:hover::after {
+    width: 100%; /* Expand the width to 100% of the text width on hover */
+}
+
+
+
+.follow{
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+}
+.follow-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.p-head-follow{
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}

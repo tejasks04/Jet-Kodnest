@@ -1,0 +1,104 @@
+.intro8-section {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack slider and dots vertically */
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  padding: 65px;
+  padding-top: 0px;
+  border-radius: 5px;
+  z-index: 100;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* Ensure no overflow */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box; /* Include padding and border in width */
+
+}
+
+.slider {
+  display: inline-flex;
+  transition: transform 1s ease;
+}
+
+.companys {
+  flex: 0 0 auto; /* Prevent shrinking */
+  height: auto;
+  margin-right: 40px;
+  margin-left: 40px;
+  box-sizing: border-box; /* Ensure margins are included in width */
+  max-width: calc(100% - 40px); /* Fit within the container */
+  cursor: grab;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Ensure wrapping on small screens */
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .intro8-section {
+    padding: 30px 10px;
+  }
+
+  .companys {
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: calc(100% - 20px);
+  }
+}
+
+.recruiters {
+  margin-left: -990px;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 16px;
+  word-spacing: -2px;
+  position: relative; /* Needed to position the ::after pseudo-element */
+  cursor: pointer;
+}
+
+.recruiters::after {
+  content: "";
+  position: absolute;
+  color: #bbb;
+  bottom: -7px; /* Adjusts the position of the border */
+  left: 0;
+  width: 0; /* Start with zero width */
+  height: 3px; /* Border height */
+  background-color: currentColor; /* Use current text color */
+  transition: width 0.3s ease-out; /* Animation for width */
+}
+
+.recruiters:hover::after {
+  width: 92%; /* Expand to full width on hover */
+  
+}
+
+

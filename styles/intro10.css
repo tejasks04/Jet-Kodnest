@@ -1,0 +1,61 @@
+.intro10-section {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack slider and dots vertically */
+  background-color: whitesmoke;
+  align-items: center;
+  padding: 50px;
+  padding-top: 70px;
+  border-radius: 5px;
+  z-index: 100;
+}
+.intro10-img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 90px;
+}
+.insta{
+  width: 65px;
+  height: 60px;
+  margin-right: 90px;
+  transition: transform 0.2s ease-out;
+}
+.yt{
+  width: 45px;
+  height: 45px;
+  margin-right: 90px;
+}
+.intro10-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  justify-content: center;
+}
+.succeed{
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.placement{
+  text-align: center;
+  max-width: 450px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+/* Base styles for all social media icons */
+ .yt, .ln, .fb, .git {
+  width: 45px;
+  height: 45px;
+  margin-right: 90px;
+  transition: transform 0.2s ease-out; /* Smooth transition */
+}
+
+/* Hover effect */
+.insta:hover, .yt:hover, .ln:hover, .fb:hover, .git:hover {
+  transform: translateY(-7px); /* Move up by 5px on hover */
+}

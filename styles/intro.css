@@ -1,0 +1,143 @@
+/* Layout of the intro-section */
+.intro-section {
+  display: grid;
+  grid-template-columns: 650px 600px;
+  font-size: 60px;
+  justify-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* Text styling */
+.intro-1{
+  display: flex;
+  flex-direction: column;
+}
+.intro-2 {
+  display: inline-block;
+}
+
+.intro-2 {
+  font-weight: 750;
+  letter-spacing: -3px;
+  word-spacing: -3px;
+  position: relative;
+  z-index: 1; /* Ensure text is above pseudo-elements */
+}
+
+.intro-4 {
+  font-size: 19px;
+  color: rgb(58, 57, 57);
+  margin-top: 20px;
+  font-weight: 0;
+}
+
+.intro-text {
+  width: 550px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+/* Pseudo-element for bottom background */
+.intro-section .intro-2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30%; /* Adjust height for bottom highlight */
+  background-color: #f8d302;
+  z-index: -1; /* Ensure pseudo-element is below the text */
+  transition: height 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect to cover entire text */
+.intro-section .intro-2:hover::after {
+  height: 100%; /* Full height on hover */
+}
+
+/* Background overlay effect */
+.intro-section .intro-2::before {
+  content: attr(data-first-half);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #f8d302;
+  color: transparent;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: -1; /* Ensure pseudo-element is below the text */
+  height: 100%; /* Ensure it covers the full text height */
+  clip-path: inset(0 100% 0 0); /* Start with hidden */
+  transition: clip-path 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.intro-section .intro-2:hover::before {
+  clip-path: inset(0 0 0 0); /* Full width on hover */
+}
+
+/* Rotating image */
+.intro-image {
+  animation: rotate 50s linear infinite;
+  height: 470px;
+  width: 470px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.button-img{
+  height: 12px;
+  width: 12px;
+  margin-right: 8px;
+}
+.intro-button{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.brochure{
+  margin-right: 10px;
+  background-color: rgb(255, 208, 0);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  transition: width 0.8s ease-in-out; /* Smooth hover animation */
+}
+.brochure:hover{
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.contact-us{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(209, 208, 208);
+    padding: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    transition: width 0.8s ease-in-out; /* Smooth hover animation */
+
+}
+.contact-us:hover{
+  padding-left: 22px;
+  padding-right: 22px;
+}

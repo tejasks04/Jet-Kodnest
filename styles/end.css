@@ -1,0 +1,71 @@
+.end-section {
+  position: relative;
+  display: flex; /* 5 equal columns */
+  background-color: whitesmoke;
+  align-items: center; /* Center items vertically */
+  justify-items: space-between; /* Center items horizontally */
+  padding-top: 20px;
+  padding-left: 110px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  z-index: 100;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(128, 128, 128, 0.363);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.contact-img,
+.email-img,
+.telegram-img{
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+.end-flex-register,
+.end-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-right: 150px;
+  cursor: pointer;
+}
+
+.k-info,
+.k-register {
+  font-weight: 700;
+  transition: margin-left 0.1s ease; /* Smooth transition for margin-left */
+}
+
+.k-info {
+  color: rgb(71, 71, 71);
+  font-size: 18px;
+}
+
+.k-info:hover {
+  margin-left: 4px; /* Extra margin-left on hover */
+}
+
+.k-register {
+  color: black;
+}
+
+.k-register:hover {
+  margin-left: 6px; /* Extra margin-left on hover */
+}
+
+.end-flex-register{
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 208, 0);
+  padding-right: 35px;
+  padding-left: 35px;
+  border-radius: 5px;
+}
+
+.end-flex-register:hover{
+  background-color: rgb(255, 208, 0);
+}

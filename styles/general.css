@@ -1,0 +1,15 @@
+body {
+  padding: 0;
+  padding-top: 55px;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: Arial;
+  width: auto;
+  overflow-x: hidden;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
